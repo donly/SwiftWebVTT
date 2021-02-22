@@ -2,18 +2,16 @@ import Foundation
 
 internal class CustomScanner {
     private let scanner: Scanner
-    private let length: Int
     init(string: String) {
         scanner = Scanner(string: string)
         scanner.charactersToBeSkipped = nil
-        length = (string as NSString).length
     }
     
-    var scanLocation: Int {
-        get { return scanner.scanLocation }
-        set { scanner.scanLocation = newValue }
+    var scanLocation: String.Index {
+        get { return scanner.currentIndex }
+        set { scanner.currentIndex = newValue }
     }
-    var isAtEnd: Bool { return scanLocation == length }
+    var isAtEnd: Bool { return scanLocation == scanner.string.endIndex }
     
     @discardableResult
     func scanUpToCharacters(from set: CharacterSet, thenSkip skipCount: Int = 0) -> String? {
@@ -55,37 +53,25 @@ internal class CustomScanner {
     
     func peek(_ count: Int, thenSkip: Bool = false) -> String? {
         guard !isAtEnd else { return nil }
-        let count = min(count, length - scanLocation)
-        let string = scanner.string as NSString
-        let range = NSRange(location: scanLocation, length: count)
-        if thenSkip { scanLocation += count }
-        return string.substring(with: range) as String
+        let count = min(count,  scanner.string.distance(from: scanLocation, to: scanner.string.endIndex))
+        let start = scanLocation
+        let end = scanner.string.index(scanLocation, offsetBy: count)
+        if thenSkip { scanLocation = scanner.string.index(scanLocation, offsetBy: count) }
+        return String(scanner.string[start..<end])
     }
     
     func peekCharacter(thenSkip: Bool = false) -> Character? {
         guard !isAtEnd else { return nil }
-        let string = scanner.string as NSString
-        let c = string.character(at: scanLocation)
-        if thenSkip { scanLocation += 1 }
-        if let scalar = Unicode.Scalar(c) { return Character(scalar) }
+        let c = scanner.string[scanLocation]
+        if thenSkip { scanLocation = scanner.string.index(scanLocation, offsetBy: 1) }
+        if let scalar = Unicode.Scalar(String(c)) { return Character(scalar) }
         return nil
     }
     
     func skip(_ count: Int) {
-        scanLocation += count
+        if !scanner.isAtEnd {
+            scanLocation = scanner.string.index(scanLocation, offsetBy: count)
+        }
     }
 }
 
-private extension Scanner {
-    func scanCharacters(from set: CharacterSet) -> String? {
-        var string: NSString? = nil
-        if scanCharacters(from: set, into: &string) { return string as String? }
-        return nil
-    }
-    
-    func scanUpToCharacters(from set: CharacterSet) -> String? {
-        var string: NSString? = nil
-        if scanUpToCharacters(from: set, into: &string) { return string as String? }
-        return nil
-    }
-}
