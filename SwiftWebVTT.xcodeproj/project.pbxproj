@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A332BFEB22A84954009E47D5 /* SwiftWebVTT.h in Headers */ = {isa = PBXBuildFile; fileRef = A332BFE922A84954009E47D5 /* SwiftWebVTT.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A332BFF222A8496D009E47D5 /* WebVTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332BFF122A8496C009E47D5 /* WebVTT.swift */; };
 		A332BFF422A849DB009E47D5 /* HTMLCharacterReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332BFF322A849DA009E47D5 /* HTMLCharacterReferences.swift */; };
 		A332C02622A84E80009E47D5 /* SwiftWebVTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332C02522A84E80009E47D5 /* SwiftWebVTTTests.swift */; };
@@ -20,6 +19,14 @@
 		A384747422EC36A500E545A6 /* WebVTTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384747322EC36A500E545A6 /* WebVTTParser.swift */; };
 		A3B935CA22A8E4B400B0E066 /* references_substitutes.json in Resources */ = {isa = PBXBuildFile; fileRef = A3B935C922A8E4B400B0E066 /* references_substitutes.json */; };
 		A3B935D322A9051A00B0E066 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B935D222A9051A00B0E066 /* Scanner.swift */; };
+		A62166592854EFCE00081AA1 /* Deduplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384746F22EC352200E545A6 /* Deduplication.swift */; };
+		A621665A2854EFCE00081AA1 /* WebVTTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384747322EC36A500E545A6 /* WebVTTParser.swift */; };
+		A621665B2854EFCE00081AA1 /* WebVTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332BFF122A8496C009E47D5 /* WebVTT.swift */; };
+		A621665C2854EFCE00081AA1 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B935D222A9051A00B0E066 /* Scanner.swift */; };
+		A621665D2854EFCE00081AA1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384747122EC35AC00E545A6 /* Extensions.swift */; };
+		A621665E2854EFCE00081AA1 /* HTMLCharacterReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332BFF322A849DA009E47D5 /* HTMLCharacterReferences.swift */; };
+		A62166602854EFD700081AA1 /* references_named.json in Resources */ = {isa = PBXBuildFile; fileRef = A332BFF522A84A22009E47D5 /* references_named.json */; };
+		A62166612854EFD700081AA1 /* references_substitutes.json in Resources */ = {isa = PBXBuildFile; fileRef = A3B935C922A8E4B400B0E066 /* references_substitutes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 		A312ECE422EC5F98004BFD28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A312ECE522EC5F98004BFD28 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A332BFE622A84954009E47D5 /* SwiftWebVTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWebVTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A332BFE922A84954009E47D5 /* SwiftWebVTT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftWebVTT.h; sourceTree = "<group>"; };
 		A332BFEA22A84954009E47D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A332BFF122A8496C009E47D5 /* WebVTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVTT.swift; sourceTree = "<group>"; };
 		A332BFF322A849DA009E47D5 /* HTMLCharacterReferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLCharacterReferences.swift; sourceTree = "<group>"; };
@@ -51,6 +57,7 @@
 		A384747322EC36A500E545A6 /* WebVTTParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVTTParser.swift; sourceTree = "<group>"; };
 		A3B935C922A8E4B400B0E066 /* references_substitutes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = references_substitutes.json; sourceTree = "<group>"; };
 		A3B935D222A9051A00B0E066 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		A62166522854EFA800081AA1 /* SwiftWebVTT_macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWebVTT_macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +76,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A621664F2854EFA800081AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,8 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				A312ECE522EC5F98004BFD28 /* LICENSE */,
+				A332BFEA22A84954009E47D5 /* Info.plist */,
+				A62166652854F6F000081AA1 /* Sources */,
 				A312ECE422EC5F98004BFD28 /* README.md */,
-				A332BFE822A84954009E47D5 /* SwiftWebVTT */,
 				A332C02422A84E80009E47D5 /* SwiftWebVTTTests */,
 				A332BFE722A84954009E47D5 /* Products */,
 			);
@@ -88,25 +103,9 @@
 			children = (
 				A332BFE622A84954009E47D5 /* SwiftWebVTT.framework */,
 				A332C02322A84E80009E47D5 /* SwiftWebVTTTests.xctest */,
+				A62166522854EFA800081AA1 /* SwiftWebVTT_macOS_.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A332BFE822A84954009E47D5 /* SwiftWebVTT */ = {
-			isa = PBXGroup;
-			children = (
-				A332BFF122A8496C009E47D5 /* WebVTT.swift */,
-				A384746F22EC352200E545A6 /* Deduplication.swift */,
-				A384747322EC36A500E545A6 /* WebVTTParser.swift */,
-				A332BFF322A849DA009E47D5 /* HTMLCharacterReferences.swift */,
-				A3B935D222A9051A00B0E066 /* Scanner.swift */,
-				A384747122EC35AC00E545A6 /* Extensions.swift */,
-				A332BFF522A84A22009E47D5 /* references_named.json */,
-				A3B935C922A8E4B400B0E066 /* references_substitutes.json */,
-				A332BFE922A84954009E47D5 /* SwiftWebVTT.h */,
-				A332BFEA22A84954009E47D5 /* Info.plist */,
-			);
-			path = SwiftWebVTT;
 			sourceTree = "<group>";
 		};
 		A332C02422A84E80009E47D5 /* SwiftWebVTTTests */ = {
@@ -128,6 +127,21 @@
 			path = Sample;
 			sourceTree = "<group>";
 		};
+		A62166652854F6F000081AA1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A332BFF122A8496C009E47D5 /* WebVTT.swift */,
+				A384746F22EC352200E545A6 /* Deduplication.swift */,
+				A384747322EC36A500E545A6 /* WebVTTParser.swift */,
+				A332BFF322A849DA009E47D5 /* HTMLCharacterReferences.swift */,
+				A3B935D222A9051A00B0E066 /* Scanner.swift */,
+				A384747122EC35AC00E545A6 /* Extensions.swift */,
+				A332BFF522A84A22009E47D5 /* references_named.json */,
+				A3B935C922A8E4B400B0E066 /* references_substitutes.json */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -135,7 +149,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A332BFEB22A84954009E47D5 /* SwiftWebVTT.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A621664D2854EFA800081AA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +198,24 @@
 			productReference = A332C02322A84E80009E47D5 /* SwiftWebVTTTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A62166512854EFA800081AA1 /* SwiftWebVTT(macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62166562854EFA800081AA1 /* Build configuration list for PBXNativeTarget "SwiftWebVTT(macOS)" */;
+			buildPhases = (
+				A621664D2854EFA800081AA1 /* Headers */,
+				A621664E2854EFA800081AA1 /* Sources */,
+				A621664F2854EFA800081AA1 /* Frameworks */,
+				A62166502854EFA800081AA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftWebVTT(macOS)";
+			productName = "SwiftWebVTT(macOS)";
+			productReference = A62166522854EFA800081AA1 /* SwiftWebVTT_macOS_.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +232,9 @@
 					};
 					A332C02222A84E80009E47D5 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					A62166512854EFA800081AA1 = {
+						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
@@ -212,6 +253,7 @@
 			targets = (
 				A332BFE522A84954009E47D5 /* SwiftWebVTT */,
 				A332C02222A84E80009E47D5 /* SwiftWebVTTTests */,
+				A62166512854EFA800081AA1 /* SwiftWebVTT(macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +274,15 @@
 			files = (
 				A3819D3422EC2D9D00F15A56 /* entities_encoded.txt in Resources */,
 				A3819D3522EC2D9D00F15A56 /* entities_decoded.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62166502854EFA800081AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62166602854EFD700081AA1 /* references_named.json in Resources */,
+				A62166612854EFD700081AA1 /* references_substitutes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +307,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A332C02622A84E80009E47D5 /* SwiftWebVTTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A621664E2854EFA800081AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A621665D2854EFCE00081AA1 /* Extensions.swift in Sources */,
+				A621665B2854EFCE00081AA1 /* WebVTT.swift in Sources */,
+				A621665E2854EFCE00081AA1 /* HTMLCharacterReferences.swift in Sources */,
+				A621665A2854EFCE00081AA1 /* WebVTTParser.swift in Sources */,
+				A621665C2854EFCE00081AA1 /* Scanner.swift in Sources */,
+				A62166592854EFCE00081AA1 /* Deduplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,15 +458,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FK4VRNJVL7;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftWebVTT/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,7 +474,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.apurin.SwiftWebVTT;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,15 +487,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FK4VRNJVL7;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftWebVTT/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +503,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.apurin.SwiftWebVTT;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -481,6 +549,68 @@
 			};
 			name = Release;
 		};
+		A62166572854EFA800081AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Mikhail Apurin. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.apurin.SwiftWebVTT.SwiftWebVTT-macOS-";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A62166582854EFA800081AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Mikhail Apurin. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.apurin.SwiftWebVTT.SwiftWebVTT-macOS-";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,6 +637,15 @@
 			buildConfigurations = (
 				A332C02B22A84E80009E47D5 /* Debug */,
 				A332C02C22A84E80009E47D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62166562854EFA800081AA1 /* Build configuration list for PBXNativeTarget "SwiftWebVTT(macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62166572854EFA800081AA1 /* Debug */,
+				A62166582854EFA800081AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

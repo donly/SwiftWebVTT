@@ -1,3 +1,5 @@
+import Foundation
+
 public struct WebVTT {
     public struct Cue {
         public let timing: Timing
